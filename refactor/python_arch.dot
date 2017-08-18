@@ -1,0 +1,10 @@
+digraph G {
+  node [shape=box]
+  high [label="paddle.v2 API"]
+  low [label="Paddle C++/PyBind"]
+  mid [label="paddle.v2.framework (Refactored Python Module)", color=red]
+
+  mid -> low
+  high -> mid
+}
+
